@@ -16,17 +16,24 @@ body{
 
 nav li {
     list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-between;
 }
 
 ul {
-    display: inline-block;
+    margin: auto;
+    padding: 0;
+    color: white;
+    font-family: sans-serif;
 }
 
 section {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-around;
     overflow: hidden;
 }
 
@@ -43,13 +50,12 @@ h2 {
 }
 
 article {
-    max-width: 30%;
-    margin: 0 0.5em;
+    max-width: 40%;
+    margin: 0.8em 0.5em;
 }
 
 article img{
-    max-width: 7em;
-    max-height: 9em;
+    width: 100%;
     border-radius: 5% 5% 0 0;
 }
 
@@ -65,10 +71,6 @@ i {
     color: lightgray;
 }
 
-.fas fa-heart {
+.fas .fa-heart{
     color: aquamarine;
-}
-
-#heart {
-    
 }
