@@ -12,6 +12,8 @@ Link naar demo:
 
 ## interface
 Eerste schets:
+![alt text](./img/Nola-FrontEnd-Designers-Opdracht1-Schets.jpg "Frontend voor Design Splash")
+
 Bij de eerste schets was ik wat enthousiast. Ik 
 
 
