@@ -25,14 +25,41 @@ Eerste schets:
 Versie 2:
 Aangezien mijn code stuk is gegaan besloot ik weer naar versie 1 te gaan. De icons werden niet meer ingeladen dus kon ik niet meer aan mijn code werken. Anders had ik graag de aangeklikte hartjes oranje gemaakt zodat ze nog beter contrasteren met het blauw. 
 
-Leg de interface uit. In de demo heb je de interface design principles 04 & 11 van [Principles of User Interface Design](http://bokardo.com/principles-of-user-interface-design/) toegepast. Hoe heb je dat gedaan?
-
 # Toegepaste Interface Design Principles
 
-Principle 4: Keep users in control. Mensen voelen zich het meeste op hun gemak wanneer zij controle hebben over de situatie. Ik heb dit principe toegepast door de mensen zelf op de hartjes te laten klikken om ze toe te voegen aan favorieten, en er een tweede keer op te klikken om ze weer weg te halen. Zo hebben ze zelf controle over hun favorieten lijst.
+Principle 4: Keep users in control. Mensen voelen zich het meeste op hun gemak wanneer zij controle hebben over de situatie. Ik heb dit principe toegepast door de mensen zelf op de hartjes te laten klikken om ze toe te voegen aan favorieten, en er een tweede keer op te klikken om ze weer weg te halen. Zo hebben ze zelf controle over hun favorieten lijst. (Zie afbeeldingen bij versie 1)
 
 Principle 11: Strong visual hierarchies work best. Ik heb visuele hierachie toegepast door de titel van de pagina, nu trending, groter te maken dan de nav elementen en te onderstrepen. Zo weet de gebruiker in welk deel van de website ze nu zitten.
-Door de hartjes en de info button heel licht blauw te maken steken ze sterk af tegen de donkere achtergrond. Zo wordt de aandacht hier naartoe getrokken en hoeft de gebruiker hier niet lang naar te zoeken. Ook zijn deze icons even groot en staan ze op dezelfde hoogte omdat ze even belangrijk zijn. Verder heb ik het design overzichtelijk gehouden door twee films naast elkaar te zetten en dan in kolommen naar beneden te laten gaan. Zo wordt de gebruiker niet overspoeld door keuzes maar kan hij er rustig doorheen scrollen.
+Door de hartjes en de info button heel licht blauw te maken steken ze sterk af tegen de donkere achtergrond. Zo wordt de aandacht hier naartoe getrokken en hoeft de gebruiker hier niet lang naar te zoeken. Ook zijn deze icons even groot en staan ze op dezelfde hoogte omdat ze even belangrijk zijn. Verder heb ik het design overzichtelijk gehouden door twee films naast elkaar te zetten en dan in kolommen naar beneden te laten gaan. Zo wordt de gebruiker niet overspoeld door keuzes maar kan hij er rustig doorheen scrollen. (Zie afbeeldingen bij versie 1)
 
 ## code
-Leg de code uit.
+Voor de films heb ik gebruik gemaakt van article elementen. Hier heb ik een image en de icons in geplaatst. Om de films netjes naast elkaar te zetten heb ik een section element gebruikt voor de pagina, namelijk de sectie "Nu Trending", en hier flexbox voor gebruikt.
+
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+Om de hartjes aan en uit te klikken heb ik JavaScript gebruikt.
+
+/*Alle elementen met class .far selecteren*/
+var icon = document.querySelectorAll('.far');
+console.log (icon);
+
+/*Uit code van front-end blok 2*/
+/* elke button laten luisteren naar een klik */
+for (i = 0; i < icon.length; i++) {
+  icon[i].addEventListener("click", addToFavourites);
+}
+
+function addToFavourites(event) {
+    /* het hartje waarop geklikt is in de variabele 'clickedHeart' opslaan */
+  var clickedHeart = event.target;
+    
+    clickedHeart.classList.toggle('fas');
+}
+
+Door classList.toggle in plaats van classList -.add en -.remove te gebruiken konden de hartjes makkelijk aan en uit gezet worden.
