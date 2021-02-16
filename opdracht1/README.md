@@ -17,13 +17,13 @@ Eerste schets:
 Bij de eerste schets was ik wat enthousiast. Ik heb het formaat veranderd naar iPhone 6/7/8 en besloot toch voor een enkele klik op het hartje te gaan.
 
 Versie 1:
-![alt text](./img-beschrijving/Schermafbeelding 2021-02-16 om 16.58.41)
-![alt text](./img-beschrijving/Schermafbeelding 2021-02-16 om 16.58.46)
+![alt text](./img-beschrijving/Schermafbeelding 2021-02-16 om 16.58.41.png)
+![alt text](./img-beschrijving/Schermafbeelding 2021-02-16 om 16.58.46.png)
 
 In de eerste versie heb ik na de eerste proces-voortgang check de JavaScript werkend gekregen. Alle hartjes zijn klikbaar. 
 
 Process:
-![alt text](./img-beschrijving/Schermafbeelding 2021-02-16 om 20.30.27)
+![alt text](./img-beschrijving/Schermafbeelding 2021-02-16 om 20.30.27.png)
 
 Ik heb geprobeerd titels toe te voegen. Dit maakte een puinhoop van mijn code en de icons leken niet meer in te laden. Ik heb besloten uiteindelijk besloten om de titels weg te laten aangezien deze ook in de hero-images stonden. De focus was dan ook de micro-intereactie en de films leken nu duidelijk genoeg.
 
