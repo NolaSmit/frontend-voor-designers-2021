@@ -56,19 +56,12 @@ article {
     box-shadow: 0.3em 0.3em 0.3em #02132d;
 }
 
-h3 {
-    font-size: 0.8em;
-    color: #b3cde0;
-    font-family: sans-serif;
-    text-align: center;
-}
-
 article img{
     width: 100%;
     border-radius: 5% 5% 0 0;
 }
 
-.icon-styling { 
+.icon-styling {
     box-sizing: 100%;
     background: #03396b;
     padding: 0.2em;
@@ -78,8 +71,6 @@ article img{
 
 i {
     color: #b3cde0;
-    width: 1em;
-    height: 1em;
 }
 
 .fas .fa-heart{
