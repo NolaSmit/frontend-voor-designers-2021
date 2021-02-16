@@ -34,7 +34,7 @@ Leg de interface uit. In de demo heb je de interface design principles 04 & 11 v
 
 # Toegepaste Interface Design Principles
 
-Principle 4: 
+Principle 4: c
 
 Principle 11:
 
