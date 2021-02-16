@@ -11,9 +11,14 @@ Ik heb een prototype van een mobiele streaming site gecodeerd. Op de web-page he
 Link naar demo: 
 
 ## interface
+Eerste schets:
+Bij de eerste schets was ik wat enthousiast. Ik 
+
 
 Versie 1:
 
+
+Process:
 
 
 Versie 2:
