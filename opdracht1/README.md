@@ -12,7 +12,7 @@ Link naar demo:
 
 ## interface
 Eerste schets:
-
+![alt text](./img-beschrijving/Nola-FrontEnd-Designers-Opdracht1-Schets.jpg)
 
 Bij de eerste schets was ik wat enthousiast. Ik 
 
