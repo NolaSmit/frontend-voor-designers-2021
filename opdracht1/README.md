@@ -12,20 +12,15 @@ Link naar demo:
 
 ## interface
 Eerste schets:
-![alt text](./img-beschrijving/Nola-FrontEnd-Designers-Opdracht1-Schets.jpg)
 
-Bij de eerste schets was ik wat enthousiast. Ik heb het formaat veranderd naar iPhone 6/7/8 en besloot toch voor een enkele klik op het hartje te gaan.
+Bij de eerste schets was ik wat enthousiast. Ik 
+
 
 Versie 1:
-![alt text](./img-beschrijving/versie1-leeg.jpg)
-![alt text](./img-beschrijving/versie1-geklikt.jpg)
 
-In de eerste versie heb ik na de eerste proces-voortgang check de JavaScript werkend gekregen. Alle hartjes zijn klikbaar. 
 
 Process:
-![alt text](./img-beschrijving/proces.jpg)
 
-Ik heb geprobeerd titels toe te voegen. Dit maakte een puinhoop van mijn code en de icons leken niet meer in te laden. Ik heb besloten uiteindelijk besloten om de titels weg te laten aangezien deze ook in de hero-images stonden. De focus was dan ook de micro-intereactie en de films leken nu duidelijk genoeg.
 
 Versie 2:
 
@@ -34,7 +29,7 @@ Leg de interface uit. In de demo heb je de interface design principles 04 & 11 v
 
 # Toegepaste Interface Design Principles
 
-Principle 4: c
+Principle 4: 
 
 Principle 11:
 
