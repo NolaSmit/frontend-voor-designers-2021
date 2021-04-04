@@ -10,7 +10,7 @@ Voor dit project besloot ik opdracht 1 en 2 te combineren. Ik wou een aantal fil
 
 Ik wou eerst een andere film API gebruiken, maar na veel problemen met de afbeeldingen heb ik de film API van Koop Reynders gebruikt.
 
-De demo: https://nolasmit.github.io/frontend-voor-designers-2021/opdracht3/demo/ 
+De demo: https://nolasmit.github.io/frontend-voor-designers-2021/opdracht3/demo/index 
 
 ## interface
 Leg de interface uit.
@@ -52,6 +52,8 @@ Wanneer het laden wat langzamer / de pagina wat slomer is zien ze dat de input v
 
 ## code
 Leg de code uit.
+
+```javascript
 
 var json = "https://koopreynders.github.io/frontendvoordesigners/opdracht3/json/movies.json";
 
@@ -165,3 +167,4 @@ document.body.onkeyup = function (e) {
     //Transformeer de stijl van X van carouselImages met het aantal dat wordt aangegeven in de functie in vw
     carouselImages.style.transform = `translateX(${translateX}vw)`;
 }
+```
