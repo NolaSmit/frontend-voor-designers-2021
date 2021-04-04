@@ -12,42 +12,34 @@ Ik wou eerst een andere film API gebruiken, maar na veel problemen met de afbeel
 
 De demo: https://nolasmit.github.io/frontend-voor-designers-2021/opdracht3/demo/index 
 
-## interface
-Leg de interface uit.
+## Interface
 
-In de demo heb je interface design principles 04, 08, 09 & 11 van [Principles of User Interface Design](http://bokardo.com/principles-of-user-interface-design/) toegepast. Hoe heb je dat gedaan?
-
-Design Principle 04 - Keep users in control
+**Design Principle 04 - Keep users in control**
 De gebruiker is altijd in controle over de slider. De gebruiker kan makkelijk heen en terug en gerust de informatie lezen.
 
-Design Principle 08 - Provide a natural next step
+**Design Principle 08 - Provide a natural next step**
 Omdat de buttons van de slider opvallen zijn gebruikers sneller geneigd de volgende film ook te bekijken. Zo kunnen ze door de slider heen en de andere films ook bekijken.
 
-Design Principle 09 - Appearance follows behaviour
+**Design Principle 09 - Appearance follows behaviour**
 1. Mensen zijn gewend op hun telefoon te scrollen. De informatie staat onder elkaar zodat ze naar beneden kunnen scrollen.
 2. De knop ziet er uit als een knop. Wanneer mensen er op klikken gaat de slider verder zoals ze verwachten.
 
-Design Principle 11 - Strong visual hierachies work best
+**Design Principle 11 - Strong visual hierachies work best**
 De minder belangrijke informatie zoals jaar van uitgave en genre is kleiner en minder fel dan de titel. Zo springt de interessantere informatie meteen in het oog.
 Daarnaast is de button een kleur die op alle posters goed opvalt waardoor deze duidelijk blijft.
 
-
-
-In de demo heb je meerdere [UI events](https://developer.mozilla.org/en-US/docs/Web/API/UIEvent) toegepast. Hoe heb je dat gedaan?
+### UI Events
 
 De slider is te besturen met zowel een click als ook de links en rechts pijltjes op je toetsenbord. Door gebruik te maken van key-input kon ik de pijltjes koppelen aan de code om de slider te laten bewegen.
 Daarnaast word de JSOn data ingeladen wanneer de pagina geladen word.
 
-
-
-IN de demo heb je een aantal states van de [UI stack](https://www.scotthurff.com/posts/why-your-user-interface-is-awkward-youre-ignoring-the-ui-stack/) toegepast. Hoe heb je dat gedaan?
+### States
 
 Ik heb de states van de UI stack toegepast door een hover en een active state aan mijn button te koppelen. 
 
 Met de hover state zien ze dat de button klikbaar is. 
 
 Wanneer het laden wat langzamer / de pagina wat slomer is zien ze dat de input verwerkt wordt door de active state van de button die een andere kleur heeft dan de andere states.
-
 
 
 ## code
