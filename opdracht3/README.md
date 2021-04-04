@@ -42,7 +42,7 @@ Met de hover state zien ze dat de button klikbaar is.
 Wanneer het laden wat langzamer / de pagina wat slomer is zien ze dat de input verwerkt wordt door de active state van de button die een andere kleur heeft dan de andere states.
 
 
-## code
+## Code
 Leg de code uit.
 
 ```javascript
