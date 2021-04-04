@@ -1,61 +1,8 @@
-# Frontend voor Designers - opdracht 3: Een interactie uitwerken met externe data
-
-Voor deze opdracht ga je een functionaliteit ontwerpen met externe data. De data is JSON die met een [REST API](https://developer.mozilla.org/en-US/docs/Glossary/REST) van een externe bron wordt ingeladen met Javascript.  Als de data geladen is moeten gebruikers je ontwerp op verschillende manieren kunnen bedienen. Verschillende states zijn vormgeven en worden op het juiste moment getoond.
-
-Lees hier de [opdrachtbeschrijving](./opdrachtbeschrijving.md).
-
-
-# Top Movies in een slider
-Voor dit project besloot ik opdracht 1 en 2 te combineren. Ik wou een aantal films laten zien op een iPhone scherm (opdracht 1). Ik wou hier meer informatie bij zetten, waardoor de films meer ruimte in beslag namen. Om toch simpel door de films te kunnen gaan heb ik ze in een slider gezet (opdracht 2).
-
-Ik wou eerst een andere film API gebruiken, maar na veel problemen met de afbeeldingen heb ik de film API van Koop Reynders gebruikt.
-
-De demo: https://nolasmit.github.io/frontend-voor-designers-2021/opdracht3/demo/ 
-
-## interface
-Leg de interface uit.
-
-In de demo heb je interface design principles 04, 08, 09 & 11 van [Principles of User Interface Design](http://bokardo.com/principles-of-user-interface-design/) toegepast. Hoe heb je dat gedaan?
-
-Design Principle 04 - Keep users in control
-De gebruiker is altijd in controle over de slider. De gebruiker kan makkelijk heen en terug en gerust de informatie lezen.
-
-Design Principle 08 - Provide a natural next step
-Omdat de buttons van de slider opvallen zijn gebruikers sneller geneigd de volgende film ook te bekijken. Zo kunnen ze door de slider heen en de andere films ook bekijken.
-
-Design Principle 09 - Appearance follows behaviour
-1. Mensen zijn gewend op hun telefoon te scrollen. De informatie staat onder elkaar zodat ze naar beneden kunnen scrollen.
-2. De knop ziet er uit als een knop. Wanneer mensen er op klikken gaat de slider verder zoals ze verwachten.
-
-Design Principle 11 - Strong visual hierachies work best
-De minder belangrijke informatie zoals jaar van uitgave en genre is kleiner en minder fel dan de titel. Zo springt de interessantere informatie meteen in het oog.
-Daarnaast is de button een kleur die op alle posters goed opvalt waardoor deze duidelijk blijft.
-
-
-
-In de demo heb je meerdere [UI events](https://developer.mozilla.org/en-US/docs/Web/API/UIEvent) toegepast. Hoe heb je dat gedaan?
-
-De slider is te besturen met zowel een click als ook de links en rechts pijltjes op je toetsenbord. Door gebruik te maken van key-input kon ik de pijltjes koppelen aan de code om de slider te laten bewegen.
-Daarnaast word de JSOn data ingeladen wanneer de pagina geladen word.
-
-
-
-IN de demo heb je een aantal states van de [UI stack](https://www.scotthurff.com/posts/why-your-user-interface-is-awkward-youre-ignoring-the-ui-stack/) toegepast. Hoe heb je dat gedaan?
-
-Ik heb de states van de UI stack toegepast door een hover en een active state aan mijn button te koppelen. 
-
-Met de hover state zien ze dat de button klikbaar is. 
-
-Wanneer het laden wat langzamer / de pagina wat slomer is zien ze dat de input verwerkt wordt door de active state van de button die een andere kleur heeft dan de andere states.
-
-
-
-## code
-Leg de code uit.
-
 var json = "https://koopreynders.github.io/frontendvoordesigners/opdracht3/json/movies.json";
 
 var main = document.querySelector("main");
+
+//console.log('hi');
 
 //setup JSON lader met XMLHttpRequest
 var request = new XMLHttpRequest();
@@ -65,6 +12,8 @@ request.send();
 
 // EventListener aanmaken, trigger = laden van de pagina
 request.addEventListener("load", function () {
+    //console.log("data is geladen");
+    //console.log(request.response);
 
     // Loop tot 5
     for (var i = 0; i < 5; i++) {
@@ -80,14 +29,10 @@ request.addEventListener("load", function () {
         // Poster in artikel zetten / aan de DOM koppelen
         film_artikel.appendChild(poster);
         
-        // H3 aanmaken
         var film_titel = document.createElement("h3");
-        // Source van text content van h3 aangeven
         film_titel.textContent = request.response[i].title;
-        // H3 in artikel zetten / aan de DOM koppelen
         film_artikel.appendChild(film_titel);
         
-        // Zelfde als H3 maar dan voor een paragraaf
         var jaar = document.createElement("p");
         jaar.textContent = request.response[i].release_date;
         film_artikel.appendChild(jaar);
